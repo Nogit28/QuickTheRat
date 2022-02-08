@@ -1,0 +1,145 @@
+/* Neste arquivo estão definidas as classes e configurações mínimas para serem usadas na estilização do trabalho final da disciplina Dersenvolvimento Web I. Ele foi criado a partir do modelo em W3Schools */
+
+
+* {
+    box-sizing: border-box;
+}
+
+/* Estilização para o body */
+body {
+    font-family: Arial;
+    margin: 0;
+}
+
+/* Título para o site */
+.header {
+	font-family: Arial Black;
+	padding:100px 344px 100px 0px;
+	text-align: center;
+	background: url("bg1.jpg") center no-repeat fixed;
+	background-size: 1500px 850px;
+	color: #f7f7f7;
+	margin: auto;
+}
+
+
+.header h1 {
+	font-size: 75px;
+	text-shadow:0 0 20px #62cfe5, 0px 0px 20px #000000;
+	}
+
+.header div {
+	text-shadow:0 0 20px #62cfe5, 0px 0px 20px #000000;
+	font-size:23px;
+	text-decoration: none;
+}
+	
+/* Estilo para a barra de navegação */
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+}
+
+/* Estilo para os links da barra de navegação */
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+	background-color: #333;
+	outline: 2px solid #e8e8e8;
+}
+
+/* Link alinhado à direita */
+.navbar a.right {
+    float: right;
+}
+
+/* Troca a cor de fundo e texto quando o mouse paira sobre o link*/
+.navbar a:hover {
+    background-color: #62cfe5;
+    color: white;
+	text-shadow: 0 0 4px black;
+}
+
+/* Container de colunas */
+.row {  
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+}
+
+/* Cria duas colunas desiguais próximas */
+/* Coluna Sidebar esquerda */
+.main {
+    -ms-flex: 60%; /* IE10 */
+    flex: 60%; /* A propriedade "flex" deixa todos os itens flexíveis terem o mesmo tamanho, independentemente do conteúdo*/
+    background-color: white;
+    padding: 20px;
+	outline: 2px solid black;
+}
+
+/* Coluna principal */
+.side {   
+    -ms-flex: 40%; /* IE10 */
+    flex: 40%;
+	color: #e8e8e8;
+    background-color: #606060;
+    padding: 20px;
+	outline: 2px solid black;
+}
+#b.main{
+	-ms-flex: 100%; /* IE10 */
+    flex: 100%;
+	text-align: center;
+	padding: 0 150px 30px 150px;
+}
+
+.ta{
+	text-decoration: underline;
+	font-family: Arial Black;
+}
+iframe {
+	outline: 3px solid black;	
+}
+
+img {
+	outline: 3px solid black;
+}
+
+a  {
+	color: #62cfe5;
+	text-decoration: none;
+}
+
+a:hover  {
+	color: lightblue;
+}
+
+/* Rodapé */
+.footer {
+    padding: 20px;
+    text-align: center;
+	background: #121738;
+	color: #e8e8e8;
+}
+
+/* Layout responsivo - Faz o empilhamento das colunas quando a largura da tela estiver menor que 700px */
+@media screen and (max-width: 700px) {
+    .row {   
+        flex-direction: column;
+    }
+}
+
+/* Layout responsivo - Faz o empilhamento dos links quando a tela estiver menor que 400px */
+@media screen and (max-width: 400px) {
+    .navbar a {
+        float: none;
+        width: 100%;
+    }
+}.slideshow-container {
+
+}
